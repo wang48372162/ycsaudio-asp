@@ -1,0 +1,130 @@
+﻿*
+  box-sizing: border-box
+  font-family: '微軟正黑體'
+
+html, body
+  margin: 0
+  padding: 0
+
+/* all
+
+.title
+  padding: .3em
+  text-align: center
+  font-size: 2em
+  font-weight: bold
+
+/*****************************************
+ *    ycs-player
+ *****************************************
+
+.player
+  margin: .5em
+  padding: 10px
+  border: 1px solid #666666
+  box-shadow: 1px 1px 1px #999999
+
+  @media only screen and (min-width: 516px)
+    &
+      margin: .5em auto
+      width: 500px
+
+/*****************************************
+ *    ycs-player
+ *****************************************
+
+#player
+  max-width: 100%
+  .ycs-player-title
+    padding: .3em
+    border-bottom: 1px solid #666666
+    font-size: 1.5em
+  .ycs-player-controls
+    margin: 2em 0
+    text-align: center
+  .ycs-button
+    display: inline-block !important
+    width: 50px
+    height: 50px
+    padding: 0
+    border: 0
+    background: transparent
+    outline: none
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+    .ycs-svg-fill
+      fill: #222222
+      opacity: .9
+      transition: all .2s
+    .ycs-svg-fill-s
+      fill: #888888
+      opacity: .9
+      transition: all .2s
+    &:active .ycs-svg-fill,
+    &:active .ycs-svg-fill-s
+      opacity: 1
+    .disabled, &:active .disabled, &:hover .disabled
+      fill: #999999 !important
+      opacity: .8 !important
+  
+  .ycs-progress-container
+    position: relative
+    height: 10px
+    background: rgba(230, 230, 230, 0.6)
+    cursor: pointer
+  .ycs-progress
+    position: absolute
+    height: 100%
+  .ycs-load-progress
+    background: rgba(200, 200, 200, 0.6)
+  .ycs-play-progress
+    background: red
+
+/*****************************************
+ *    ycs-player-controls
+ *****************************************
+
+@media only screen and (min-width: 480px)
+  #player .ycs-button
+    cursor: pointer
+  
+  #player .ycs-button:hover .ycs-svg-fill
+    opacity: 1
+  
+  #player .ycs-button:hover .ycs-svg-fill-s
+    opacity: 1
+
+/*****************************************
+ *    list
+ *****************************************
+
+#list
+  .ycs-list-title
+    font-size: 1.2em
+    padding: 0 .4em .4em
+  .ycs-list-ul
+    list-style: none
+    border: 1px solid #333333
+    box-shadow: 1px 1px 1px #999999
+    padding: 0
+    margin: 0
+    li
+      border-bottom: 1px solid #333333
+      &:last-child
+        border-bottom: 0px
+    a
+      display: block
+      padding: .65em
+      text-decoration: none
+      color: #eeeeee
+      background: #222222
+      opacity: .8
+      transition: all .3s
+      &.this
+        opacity: .9
+      &:active
+        opacity: 1
+
+@media only screen and (min-width: 480px)
+  #list .ycs-list-ul a:hover
+    opacity: 1
